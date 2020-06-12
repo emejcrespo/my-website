@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+
+<!-- layout from  http://watermoist.world/
+-->
+
+
+<html>
+
+<head>
+  <title>María José Crespo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <style>
+    body {
+      font-family: courier;
+      font-size: 25px;
+      line-height: 32px;
+      background-color: rgb(44, 62, 80);
+      color: whitesmoke;
+      padding: 0px 30px;
+    }
+
+    .bg {
+      background-color: whitesmoke;
+      color: rgb(0, 122, 255);
+    }
+
+    .bottomleft {
+      position: fixed;
+      bottom: 20px;
+      left: 30px;
+    }
+
+    .bottomright {
+      position: fixed;
+      bottom: 60px;
+      right: 30px;
+      font-size: 20px;
+    }
+
+    mark {
+      background-color: blue;
+      color: rgb(0, 60, 255);
+    }
+
+    ul, #myUL {
+  list-style-type: none;
+}
+
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: whitesmoke;
+  display: inline-block;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+    a:link {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: white;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+
+    a:active {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+
+  </style>
+</head>
+
+<body>
+<!--
+  <div id="tittle"><marquee height="300px" direction="down" scrollamount="50">
+    <image src="linea.png" width="180px">
+    </marquee></div><br> -->
+
+  <p>
+    <div class="bg">Last update: 11/06/20 </div><br>
+
+      María José Crespo is a visual artist living and working in Tijuana, Baja California, México<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=https://www.are.na/maria-jose-crespo> are.na </a> <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=https://www.instagram.com/emejcrespo/> IG </a> <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="mailto:majosecrespo@gmail.com">mail</a><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href=https://drive.google.com/file/d/1xuCAX-4AlwWQg048aWkyGLwUWLrIDnrP/view?usp=sharing> CV </a><br><br>
+
+
+<!--
+    <ul id="myUL">
+  <li><span class="caret">&nbsp;&nbsp;&nbsp;&nbsp;Profile</span><br>
+    <ul class="nested">
+   <li>&nbsp;&nbsp;&nbsp;&nbsp;01</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;02</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;03</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;04</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;05</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;06</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;07</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;08</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;09</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;10</li>
+
+  </li>
+</ul>
+
+    <image src="howhard1.png" width="500px"
+    <a href="../P2_51images/2 Publication/index.html">▶︎&nbsp;&nbsp;&nbsp;&nbsp;51images</a><br>
+-->
+
+    <a href="p3/index.html">▶︎&nbsp;&nbsp;&nbsp;&nbsp;Variaciones para clasificar paisajes</a><br>
+>
+    <!--  <a href="p4/index.html">▶︎&nbsp;&nbsp;&nbsp;&nbsp;How </a><br>
+    <a href="p5/index.html">▶︎&nbsp;&nbsp;&nbsp;&nbsp;Writings</a></br>
+    <a href="p6/index.html">▶︎&nbsp;&nbsp;&nbsp;&nbsp;References</a></br>
+    <a href="p1/index.html">▶︎ Profile</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    ▶︎ 51images<br>
+    ▶︎ Writer's Notebookbsp
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;
+    ▶︎ Screensaver<br>
+    ▶︎ Writings-->
+    <br>
+    <br>
+
+
+
+    <!--<div class="bottomright">
+      <mark><a href="mailto:majosecrespo@gmail.com">Message</a> </mark>
+    </div>
+  -->
+  <script>
+  var toggler = document.getElementsByClassName("caret");
+  var i;
+
+  for (i = 0; i < toggler.length; i++) {
+    toggler[i].addEventListener("click", function() {
+      this.parentElement.querySelector(".nested").classList.toggle("active");
+      this.classList.toggle("caret-down");
+    });
+  }
+  </script>
+
+</body>
+
+</html>
